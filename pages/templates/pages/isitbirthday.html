@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% now "m" as current_month %}
+    {% now "d" as current_day %}
+    <p>{{ current_month }}, {{ current_day }}</p>
+    {% if current_month == '06' and current_day == '04' %}
+        <p>YES</p>
+    {% else %}
+        <p>NO</p>
+    {% endif %}
+</body>
+</html>
